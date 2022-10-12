@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a216b07bbe44254fa3ff277a56e3fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 1, z: 0}
+  direction: {x: 0, y: -1, z: 0}
   speed: 10
 --- !u!58 &-1892935533454779923
 CircleCollider2D:
@@ -182,13 +182,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e783c325cd107e3489b091e9964600b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 819463441304497132}
-        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
-        m_MethodName: OnDestroy
-        m_Mode: 1
+      - m_Target: {fileID: 3830422105438129819}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

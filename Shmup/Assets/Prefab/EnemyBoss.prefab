@@ -449,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls: []
@@ -771,6 +772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 81306dc19cceba54192dccc1bb7f5512, type: 2}
   spriteRenderer: {fileID: 0}
+  multipleInstantiator: {fileID: 0}
 --- !u!114 &5997826951361474262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,6 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls: []
@@ -1364,6 +1367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls: []
@@ -1546,6 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls: []
@@ -2263,6 +2268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls: []

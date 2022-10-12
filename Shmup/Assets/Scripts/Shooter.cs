@@ -7,6 +7,8 @@ public class Shooter : MonoBehaviour
     [SerializeField] public Transform shootOrigin;
     [SerializeField] public GameObject shootPrefab;
     [SerializeField] private ShootingConfig config;
+    [SerializeField] private List<GameObject> shootList;
+    [SerializeField]  private int poolSize = 10;
     public ShootingConfig shootingConfig 
     {
         get { return config; }
@@ -15,6 +17,8 @@ public class Shooter : MonoBehaviour
     public bool IsEnabled = true;
     private void Start()
     {
+        AddShootsToPool(poolSize);
+
         if(config == null)
         {
             return;
@@ -29,20 +33,53 @@ public class Shooter : MonoBehaviour
     {
         while (true)
         {
-            DoShoot();
+            //DoShoot();
             yield return new WaitForSeconds(config.shootCadence);
         }
     }
     public void DoShoot()
     {
+        //if (IsEnabled && shootOrigin != null)
+        //{
+        //    Instantiate(shootPrefab, shootOrigin.position, shootOrigin.rotation);
+        //}
         if (IsEnabled && shootOrigin != null)
         {
-            Instantiate(shootPrefab, shootOrigin.position, shootOrigin.rotation);
+            GameObject shoot = RequestShoot();
+            shoot.transform.position = shootOrigin.position;
         }
+            
+
+      
     }
+
 
     public void EnableShooter(bool shouldEnable)
     {
         IsEnabled = shouldEnable;
+    }
+
+    private void AddShootsToPool(int amount)
+    {
+        for(int i = 0; i < amount; i++)
+        {
+            GameObject bullet = Instantiate(shootPrefab);
+            bullet.SetActive(false);
+            shootList.Add(bullet);
+            //bullet.transform.parent = transform;
+        }
+    }
+
+    public GameObject RequestShoot()
+    {
+        for (int i = 0; i < shootList.Count; i++)
+        {
+            if (!shootList[i].activeSelf)
+            {
+                shootList[i].SetActive(true);
+                return shootList[i];
+            }
+        }
+        return null;
     }
 }
