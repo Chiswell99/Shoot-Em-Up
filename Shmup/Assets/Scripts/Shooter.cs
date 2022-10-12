@@ -47,8 +47,9 @@ public class Shooter : MonoBehaviour
         {
             GameObject shoot = RequestShoot();
             shoot.transform.position = shootOrigin.position;
+            shoot.transform.rotation = shootOrigin.rotation;
         }
-            
+           
 
       
     }

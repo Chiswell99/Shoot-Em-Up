@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a216b07bbe44254fa3ff277a56e3fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: -1, z: 0}
+  direction: {x: 0, y: 1, z: 0}
   speed: 10
 --- !u!50 &-6506597926710808786
 Rigidbody2D:
