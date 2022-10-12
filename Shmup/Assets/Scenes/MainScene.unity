@@ -301,9 +301,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6ef67cb0ed5ce254090a882699067930, type: 2}
   - {fileID: 11400000, guid: f42bbe3fe2b1b0141b95cf2321b5d9dd, type: 2}
   - {fileID: 11400000, guid: 6ef67cb0ed5ce254090a882699067930, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   spawnRotation: {x: 0, y: 0, z: 180, w: 0}
   initialWaitTime: 1
   cadenceBetweenWaves: 1
