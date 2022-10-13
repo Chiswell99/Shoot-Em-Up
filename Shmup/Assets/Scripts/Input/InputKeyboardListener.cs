@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class InputKeyboardListener : MonoBehaviour, IInputeable
 {
-    float butX;
-    float butY;
+    public Action<Vector3> dir;
     public Vector3 direction;
+    
     public void GetDirection(Vector3 direction)
     {
         InputProvider.TriggerDirection(direction);
@@ -24,21 +25,22 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
 
 
         //GetDirection(new Vector3(butX, butY));
-        GetDirection(direction);
-        //GetDirection(new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical")));
+        //GetDirection(new Vector3(direction.x, direction.y));
+        GetDirection(new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical")));
 
 
     }
 
-    public void MovementX(float valX)
-    {
-        direction = new Vector3(valX, 0, 0);
-    }
 
-    public void MovementY(float valY)
-    {
-        direction = new Vector3(0, valY, 0);
-    }
+    //public void MovementX(float valX)
+    //{
+    //    direction = new Vector3(valX, 0, 0);
+    //}
+
+    //public void MovementY(float valY)
+    //{
+    //    direction = new Vector3(0, valY, 0);
+    //}
     //public void MoveButtonX(float val)
     //{
     //    butX = val;

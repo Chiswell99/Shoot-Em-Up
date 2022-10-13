@@ -12,4 +12,9 @@ public class Mover : MonoBehaviour
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, transform.position + direction);
+    }
 }
