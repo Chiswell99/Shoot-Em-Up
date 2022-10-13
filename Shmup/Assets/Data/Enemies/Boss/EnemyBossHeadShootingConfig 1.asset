@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f9de0d9dd518849a9a3106847b483e, type: 3}
   m_Name: EnemyBossHeadShootingConfig 1
   m_EditorClassIdentifier: 
-  shootInitialWaitTime: 100
+  shootInitialWaitTime: 3
   shootCadence: 1
   damage: 1
+  autoShooting: 0

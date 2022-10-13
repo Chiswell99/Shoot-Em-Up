@@ -15,4 +15,4 @@ MonoBehaviour:
   shootInitialWaitTime: 1
   shootCadence: 1
   damage: 1
-  autoShooting: 1
+  autoShooting: 0
