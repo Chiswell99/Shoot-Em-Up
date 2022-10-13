@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootOrigin: {fileID: 8154550457938866131}
   shootPrefab: {fileID: 3830422105438129819, guid: 13090fafed5044448b7639fb91f3fe84, type: 3}
-  config: {fileID: 11400000, guid: 247aace96cce2d447ba9419929f17d60, type: 2}
+  config: {fileID: 11400000, guid: 79d6b8f028bd3934f85f505af78b6790, type: 2}
   shootList: []
   poolSize: 10
   IsEnabled: 1
