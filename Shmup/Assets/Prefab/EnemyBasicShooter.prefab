@@ -169,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 3694179005336804524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 3694179006341821994}
   - {fileID: 6983923191972781297}
@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc09218609dc61a48b6287d6f6b56fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysAction:
     m_PersistentCalls:
       m_Calls:
@@ -453,6 +454,8 @@ MonoBehaviour:
   shootOrigin: {fileID: 8154550457938866131}
   shootPrefab: {fileID: 3830422105438129819, guid: 13090fafed5044448b7639fb91f3fe84, type: 3}
   config: {fileID: 11400000, guid: 247aace96cce2d447ba9419929f17d60, type: 2}
+  shootList: []
+  poolSize: 10
   IsEnabled: 1
 --- !u!1 &4860986756881207636
 GameObject:
