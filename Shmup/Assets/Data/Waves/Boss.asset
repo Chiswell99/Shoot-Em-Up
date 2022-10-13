@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - enemyPrefab: {fileID: 2827875838611291877, guid: 515be129531a0ff45ad5c7cdfc0d2600, type: 3}
-    spawnReferencePosition: {x: 0, y: 8.3, z: -4.5}
+    spawnReferencePosition: {x: 0, y: 5, z: -4.5}
     useSpecificXPosition: 1
     config: {fileID: 11400000, guid: 4e492afebdaeeb1438378cfb15d84ff9, type: 2}
   cadence: 0.2

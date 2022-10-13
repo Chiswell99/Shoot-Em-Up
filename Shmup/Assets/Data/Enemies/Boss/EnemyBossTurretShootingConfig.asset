@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemyBossTurretShootingConfig
   m_EditorClassIdentifier: 
   shootInitialWaitTime: 3
-  shootCadence: 2
+  shootCadence: 1
   damage: 1
   autoShooting: 0

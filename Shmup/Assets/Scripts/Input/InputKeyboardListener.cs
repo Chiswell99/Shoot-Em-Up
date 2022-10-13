@@ -21,6 +21,7 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
 
         GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
 
+
         //var x = Input.GetAxis("Horizontal");
         //Var y = Input.GetAxis("Vertical")
     }

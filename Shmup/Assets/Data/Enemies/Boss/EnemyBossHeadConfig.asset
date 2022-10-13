@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemyBossHeadConfig
   m_EditorClassIdentifier: 
   shootInitialWaitTime: 3
-  shootCadence: 1
+  shootCadence: 2
   damage: 1
   autoShooting: 0
