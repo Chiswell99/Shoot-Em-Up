@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InputKeyboardListener : MonoBehaviour, IInputeable
 {
+    
     public void GetDirection(Vector3 direction)
     {
         InputProvider.TriggerDirection(direction);
@@ -19,10 +20,24 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
             ShootPressed();
         }
 
-        GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+
+        GetDirection(new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical")));
 
 
-        //var x = Input.GetAxis("Horizontal");
-        //Var y = Input.GetAxis("Vertical")
     }
+
+    //public void MoveButtonX()
+    //{
+    //    newDirection = new Vector3(1, 0, 0);
+    //    Debug.Log("Entro al X");
+    //}
+
+    //public void MoveButtonY()
+    //{
+    //    newDirection = new Vector3(0, 1, 0);
+    //    Debug.Log("Entro al Y");
+
+    //}
+
+
 }
