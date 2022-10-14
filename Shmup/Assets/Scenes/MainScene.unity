@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &135298308
 Transform:
   m_ObjectHideFlags: 0
@@ -306,6 +306,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a4d70635aff1b574687a49aa87ceaf88, type: 2}
   - {fileID: 11400000, guid: c65a905063dc7554bba28c0994083a00, type: 2}
   - {fileID: 11400000, guid: 8d5626ee6fa31914fab07b4ec856c9e0, type: 2}
+  - {fileID: 11400000, guid: 8d5626ee6fa31914fab07b4ec856c9e0, type: 2}
+  - {fileID: 11400000, guid: 6806ec177cfc98c44a4446ca4a57492e, type: 2}
   spawnRotation: {x: 0, y: 0, z: 180, w: 0}
   initialWaitTime: 1
   cadenceBetweenWaves: 3

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class GameController : MonoBehaviour
 
     public void OnPlayerDie()
     {
-        Debug.Log("*********************PLAYER DIED!!!***********************");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void OnPickupPickedUp(PickupController pickup)//Game controller le avisa al player que tomo un pickup de cierto tipo.
