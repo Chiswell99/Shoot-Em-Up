@@ -5,6 +5,8 @@ using System;
 
 public class InputKeyboardListener : MonoBehaviour, IInputeable
 {
+    public float butY;
+    public float butX;
     public Action<Vector3> dir;
     public Vector3 direction;
     
@@ -26,21 +28,23 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
 
         //GetDirection(new Vector3(butX, butY));
         //GetDirection(new Vector3(direction.x, direction.y));
-        GetDirection(new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical")));
+        //GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
 
 
     }
 
 
-    //public void MovementX(float valX)
-    //{
-    //    direction = new Vector3(valX, 0, 0);
-    //}
+    public void MovementX(float valX)
+    {
+        direction.x = valX;
+        GetDirection(direction);
+    }
 
-    //public void MovementY(float valY)
-    //{
-    //    direction = new Vector3(0, valY, 0);
-    //}
+    public void MovementY(float valY)
+    {
+        direction.y = valY;
+        GetDirection(direction);
+    }
     //public void MoveButtonX(float val)
     //{
     //    butX = val;
