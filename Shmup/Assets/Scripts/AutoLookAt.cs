@@ -6,6 +6,7 @@ public class AutoLookAt : MonoBehaviour
 {
     private Transform target;
 
+    //Prueba para GitHUB
     private void Start()
     {
         target = GameController.Instance.Player.transform;
