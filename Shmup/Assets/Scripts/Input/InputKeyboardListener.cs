@@ -28,7 +28,7 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
 
         //GetDirection(new Vector3(butX, butY));
         //GetDirection(new Vector3(direction.x, direction.y));
-        //GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+        //GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));//Descomentar este para usar input del teclado.
 
 
     }

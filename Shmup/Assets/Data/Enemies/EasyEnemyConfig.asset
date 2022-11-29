@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EasyEnemyConfig
   m_EditorClassIdentifier: 
   moverSpeed: 2
-  sprite: {fileID: 21300000, guid: 278b61a9028b9194ba3d4eeadb00f4fb, type: 3}
+  sprite: {fileID: 21300000, guid: a507e4d319138d44482579bc5610a9e5, type: 3}
   score: 25
   health: 1
   pickupChance: 1
