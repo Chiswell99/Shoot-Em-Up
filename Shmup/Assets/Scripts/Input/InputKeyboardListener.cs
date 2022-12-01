@@ -28,9 +28,9 @@ public class InputKeyboardListener : MonoBehaviour, IInputeable
 
         //GetDirection(new Vector3(butX, butY));
         //GetDirection(new Vector3(direction.x, direction.y));
-#if UNITY_EDITOR
-        GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
-#endif
+//#if UNITY_EDITOR
+//        GetDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+//#endif
 
 
     }

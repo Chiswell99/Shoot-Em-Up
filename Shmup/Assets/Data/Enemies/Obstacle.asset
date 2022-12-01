@@ -15,5 +15,5 @@ MonoBehaviour:
   moverSpeed: 1
   sprite: {fileID: 21300000, guid: 4c8a2444f139c1447b5bd181110e264b, type: 3}
   score: 50
-  health: 2
+  health: 4
   pickupChance: 0.276
