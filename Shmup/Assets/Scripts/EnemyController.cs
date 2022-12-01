@@ -57,6 +57,7 @@ public class EnemyController : MonoBehaviour
         StopAllCoroutines();
         GameController.Instance.OnDie(gameObject, config.score);
     }
+
     private IEnumerator ShootForever(Shooter shooter)
     {
         yield return new WaitForSeconds(shooter.shootingConfig.shootInitialWaitTime);
@@ -66,4 +67,5 @@ public class EnemyController : MonoBehaviour
                 yield return new WaitForSeconds(shooter.shootingConfig.shootCadence);
         }
     }
+
 }
