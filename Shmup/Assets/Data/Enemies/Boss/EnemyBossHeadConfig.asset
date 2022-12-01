@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootInitialWaitTime: 3
   shootCadence: 2
-  damage: 1
+  damage: 5
   autoShooting: 0
