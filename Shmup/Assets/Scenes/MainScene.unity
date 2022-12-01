@@ -310,7 +310,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6806ec177cfc98c44a4446ca4a57492e, type: 2}
   spawnRotation: {x: 0, y: 0, z: 180, w: 0}
   initialWaitTime: 1
-  cadenceBetweenWaves: 3
+  cadenceBetweenWaves: 2.5
 --- !u!1 &144283101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,7 +2952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1396696889
 RectTransform:
   m_ObjectHideFlags: 0
