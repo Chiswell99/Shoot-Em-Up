@@ -13,9 +13,19 @@ public class CoinStore : MonoBehaviour
             stamina = PlayerPrefs.GetInt("Stamina");
         }
     }
-    public void BuyCoins()
+    public void BuyCoins3()
     {
-        stamina++;
+        stamina+= 3;
+        PlayerPrefs.SetInt("Stamina", stamina);
+    }
+    public void BuyCoins5()
+    {
+        stamina += 5;
+        PlayerPrefs.SetInt("Stamina", stamina);
+    }
+    public void BuyCoins10()
+    {
+        stamina += 10;
         PlayerPrefs.SetInt("Stamina", stamina);
     }
 }
