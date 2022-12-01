@@ -14,8 +14,15 @@ public class DestroyObject : MonoBehaviour
 
     public void OnDestroyBoss()
     {
-        Destroy(gameObject, destroyTime);
+
+        StartCoroutine(DestroyBoss());
         
+    }
+
+    IEnumerator DestroyBoss()
+    {
+        yield return new WaitForSeconds(5);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
