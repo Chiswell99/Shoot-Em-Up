@@ -6,7 +6,7 @@ using System;
 
 public class mainmenu : MonoBehaviour
 {
-  public int stamina;
+    public int stamina;
     public int maxStamina;
     public bool _staminaReload;
 
@@ -20,6 +20,7 @@ public class mainmenu : MonoBehaviour
                 _staminaReload = true;
 
                 DateTime time = DateTime.Parse(PlayerPrefs.GetString("Time"));
+                Debug.Log(time);
                 var actualStamina = PlayerPrefs.GetInt("Stamina");
 
                 int multiply = 0;
@@ -65,9 +66,11 @@ public class mainmenu : MonoBehaviour
 
     public void PlayGame()
     {
-        stamina--;
-        PlayerPrefs.SetInt("Stamina", stamina);
-
+        if(stamina > 0)
+        {
+            stamina--;
+            PlayerPrefs.SetInt("Stamina", stamina);
+        }
         if (stamina < maxStamina)
         {
             PlayerPrefs.SetString("Time", DateTime.Now.AddSeconds(30).ToString());
